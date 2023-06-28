@@ -17,8 +17,10 @@ public class Game
     {
         // @ is a verbatim identifier
         Console.WriteLine(@"Welcome to Cook's Assistant!
+        
 In this game, you will encounter a sad cook who's down on his luck.
 It is up to you to help him bake a cake and save his head!
+
 Press 'Enter' to begin.");
         Console.ReadLine();
         Console.Clear();//clearing console once something is entered
