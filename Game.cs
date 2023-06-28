@@ -408,6 +408,8 @@ Hopefully you aren't tricking me and giving these to your cats.  Man, cats are t
                     Console.WriteLine("");
                     Say("Adventurer", "Nope. Pretty sure he likes blue. Thank you, bye!");
                     Console.WriteLine("");
+                    Say("Edwin", "YOU WILL RUE THE DAY YOU DENIED MY ADVICE! RUUEE THEE DAAYYY!");
+                    Console.WriteLine("");
                     Console.WriteLine("---");
                     Enter("Press 'Enter' to continue.");
                     Console.ReadLine();
@@ -415,9 +417,30 @@ Hopefully you aren't tricking me and giving these to your cats.  Man, cats are t
                     break;
                 }
             
-            
-        }
+            case "2":
+            case "Take Edwin's advice and go with red.":
+                {
+                    Console.WriteLine("---");
+                    Console.WriteLine("");
+                    Say("Adventurer", "Mmm, okay. If you're sure about this, then I'll take the red candles.");
+                    Console.WriteLine("");
+                    Say("Edwin", "I knew you'd see it my way, hehehe. Come again, soon!");
+                    Console.WriteLine("");
+                    Console.WriteLine("---");
+                    Enter("Press 'Enter' to continue.");
+                    Console.ReadLine();
+                    ninth();
+                    break;
+                }
 
+                default:
+                {
+                    Enter("Unrecognizable command.  Press 'Enter' to try again.");
+                    Console.ReadLine();
+                    eighth(); //bringing back to beginning of the eigth method
+                    break;
+                }
+        }
     }
 
     public void ninth()
