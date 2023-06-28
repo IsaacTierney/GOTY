@@ -85,7 +85,7 @@ Press 'Enter' to begin.");
     }
     public void second()
     {
-        string options
+        string options;
           
         Console.WriteLine("---");
 
@@ -101,7 +101,7 @@ Press 'Enter' to begin.");
         Console.WriteLine("");
         Say("Adventurer", "I don't have that kind of money!");
         Console.WriteLine("");
-        Say("Marla", "Unfortunately for you, I'm the only flour mill around.")
+        Say("Marla", "Unfortunately for you, I'm the only flour mill around.");
         Console.WriteLine("---");
         Console.WriteLine("");
         Console.WriteLine("1. Give up and go home.");
@@ -268,6 +268,102 @@ and yer egg that Brianne fetched for ye.");
 
     public void fourth()
     {
+        Console.WriteLine("---");
+        Console.WriteLine("*Happy that you have gathered all but the sardines, you make your way to see Garrett the fisherman at the local port.*");
+        Console.WriteLine("");
+        Console.WriteLine("*You arrive at the port.");
+        Console.WriteLine("");
+        Console.WriteLine(@"Adventurer: Geez, it smells here! Where is Garrett? I'm needing to get some sardines for a birthday cake. 
+        Not my favorite kind of birthday cake, but oh well.");
+        Console.WriteLine("");
+        Console.WriteLine(@"Garrett: You have found the right person. Hi, I'm Garrett.  I can assist you with the sardines.
+Hopefully you aren't tricking me and giving these to your cats.  Man, cats are the worst!");
+        Console.WriteLine("");
+        Say("Adventurer", "No cats, just for the Duke's birthday cake.");
+        Console.WriteLine("");
+        Say("Adventurer", "How much for the sardines?");
+        Console.WriteLine("");
+        Say("Garrett", "Your lucky day, only 3 gold coin pieces.");
+        Console.WriteLine("");
+        Say("Adventurer", "I'll take them, thanks sir!  Wish all my stops have been this easy.");
+        Console.WriteLine("");
+        Console.WriteLine("*You have gathered all of the cook's requested ingredients, time to head back to the castle to hand over the ingredients to him.*");
+        Console.WriteLine("");
+        Say("Adventurer", "That cook better be super glad to see me after all that he put me through!");
+        Enter("Press 'Enter' to continue");
+        Console.ReadLine();
+        Console.Clear();
+        fifth();
+        
+
+    }
+
+    public void fifth()
+    {
+        Console.WriteLine("---");
+        Console.WriteLine("*You arrive at the castle and find the cook pacing the kitchen floor.*");
+        Console.WriteLine("");
+        Console.WriteLine("*The cook sees you and lets out a big sigh of relief.");
+        Console.WriteLine("");
+        Console.WriteLine(@"Adventurer: I return with all of the ingredients you need for the Duke's birthday cake. I'll just drop these on the table here and head on my way.");
+        Console.WriteLine("");
+        Console.WriteLine(@"Cook: You have saved my life!  I can not thank you enough... Wait, where are the birthday candles??");
+        Console.WriteLine("");
+        Say("Adventurer", "CANDLES?  You didn't say anything about candles!");
+        Console.WriteLine("");
+        Say("Cook", "Oh, really?  Huh.  Must have slipped my mind! I also need 100 birthday candles for the Duke's cake.");
+        Console.WriteLine("");
+        Say("Adventurer", "I don't know. There are more adventures out there for me. I'm thinking we should just part our ways here.");
+        Console.ReadLine();
+        Console.Clear();
+        sixth();
+    }
+        
+    public void sixth()
+    {
+            Console.WriteLine("---");
+            Random rnd = new Random();
+            String[] candleOptions = {"The cook pleads for your additional assistance of picking up the birthday candles", "The cook offers to let you help him bake the cake if you go pick up the birthday candles",
+            "The cook falls to the ground and begs you to go and pick up the birthday candles."};
+            int randomNumber = rnd.Next(0,3);
+            String candleText = candleOptions[randomNumber];
+
+            String candleChoice;
+
+            Console.WriteLine(candleText);
+            Console.WriteLine("Do you help the cook by going to pick up the 100 birthday candles; Yes or No?");
+            Console.Write("Your Choice: ");
+            candleChoice = Console.ReadLine().ToLower();
+
+            if (candleChoice == "yes" || candleChoice == "y")
+            {
+                Console.WriteLine("You feel like you really should just end this adventure but you decide to continue and seek out the 100 birthday candles.");
+                Console.ReadLine();
+                Console.Clear();
+                seventh();
+            }
+            else if(candleChoice == "no" || candleChoice == "n")
+            {
+                Console.WriteLine("You are so done with this cook and wish him the best and make a quick exit.");
+            Console.WriteLine("");
+                Console.WriteLine("For partial completion of quest, you have earned 1 quest point.");
+                Console.ReadLine();
+                Console.Clear();
+                gameOver();
+            }
+            else
+            {
+                Console.WriteLine("Unrecognizable command. Must enter 'yes' or 'no'. Press 'Enter' to try again.");
+                Console.ReadLine();
+                sixth();
+            }
+        
+
+    }
+
+    public void seventh()
+    {
+        
     }
 
     public void gameOver()
