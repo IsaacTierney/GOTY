@@ -85,9 +85,10 @@ Press 'Enter' to begin.");
     }
     public void second()
     {
-        string options;
-
+        string options
+          
         Console.WriteLine("---");
+
         Say("Adventurer", "First up on my list is Marla at the Flour Mill");
         Console.WriteLine("");
         Console.WriteLine("*You walk along a dirt path passing by many goblins and beggars.*");
@@ -100,7 +101,7 @@ Press 'Enter' to begin.");
         Console.WriteLine("");
         Say("Adventurer", "I don't have that kind of money!");
         Console.WriteLine("");
-        Say("Marla", "Unfortunately for you, I'm the only flour mill around.");
+        Say("Marla", "Unfortunately for you, I'm the only flour mill around.")
         Console.WriteLine("---");
         Console.WriteLine("");
         Console.WriteLine("1. Give up and go home.");
