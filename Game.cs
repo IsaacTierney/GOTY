@@ -423,9 +423,31 @@ Hopefully you aren't tricking me and giving these to your cats.  Man, cats are t
     public void ninth()
     {}
 
+
     public void gameOver()
     {
+        Console.WriteLine("---");
+        Console.Clear();
+        Console.WriteLine("*Thanks for playing!*");
+        Console.WriteLine("*Try it again?*");
+        Enter("Press 'Enter' to continue");
+        Console.ReadLine();
+        Console.Clear();
+        gameTitle();
        
+    }
+
+    public void megaAdventurer()
+    {
+        Console.WriteLine("---");
+        Console.Clear();
+        Console.WriteLine("*Congratulations!! Quest complete!*");
+        Console.WriteLine("");
+        Console.WriteLine("*You are awarded 1000 gold pieces, 5 quest points, and 800 cooking experience.");
+        Enter("Press 'Enter' to continue");
+        Console.ReadLine();
+        Console.Clear();
+        gameTitle();
     }
 
     private void Say(string name, string line)
