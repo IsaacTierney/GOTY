@@ -86,6 +86,8 @@ Press 'Enter' to begin.");
     }
     public void second()
     {
+        string options;
+        
         Say("Adventurer", "First up on my list is Marla at the Flour Mill");
         Console.WriteLine("");
         Console.WriteLine("You walk along a dirt path passing by many goblins and beggars.");
@@ -97,8 +99,8 @@ Press 'Enter' to begin.");
         Say("Marla", "Unfortunately for you, I'm the only flour mill around.");
         Console.WriteLine("1. No");
         Console.WriteLine("2. Yes");
-        Console.Write("Answer: ");
-        answer = Console.ReadLine().ToLower();
+        Console.Write("Options: ");
+        options = Console.ReadLine().ToLower();
         Console.Clear();
 
     }
