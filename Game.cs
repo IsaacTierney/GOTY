@@ -4,6 +4,7 @@ namespace GOTY;
 
 public class Game
 {
+    private string? _color;
     static void Main(string[] args)
     {
         new Game().run();
@@ -17,6 +18,7 @@ public class Game
     {
         // @ is a verbatim identifier
         Console.WriteLine(@"Welcome to Cook's Assistant!
+
 In this game, you will encounter a sad cook who's down on his luck.
 It is up to you to help him bake a cake and save his head!
 
@@ -40,7 +42,7 @@ Press 'Enter' to begin.");
         Console.WriteLine("1. No");
         Console.WriteLine("2. Yes");
         Console.Write("Answer: ");
-        answer = Console.ReadLine().ToLower();
+        answer = Console.ReadLine()!.ToLower();
         Console.Clear();
 
         //switch based on the answer variable
@@ -88,7 +90,6 @@ Press 'Enter' to begin.");
         string options;
           
         Console.WriteLine("---");
-
         Say("Adventurer", "First up on my list is Marla at the Flour Mill");
         Console.WriteLine("");
         Console.WriteLine("*You walk along a dirt path passing by many goblins and beggars.*");
@@ -107,7 +108,7 @@ Press 'Enter' to begin.");
         Console.WriteLine("1. Give up and go home.");
         Console.WriteLine("2. Confuse Marla and steal the goods.");
         Console.Write("Options: ");
-        options = Console.ReadLine().ToLower();
+        options = Console.ReadLine()!.ToLower();
         Console.Clear();
 
         switch (options)
@@ -210,7 +211,7 @@ Hope yer smart enough to tell em apart.");
         Console.WriteLine("1. Ignore the 'moo' and give it a yank.");
         Console.WriteLine("2. Heed the 'moo' and find a different cow.");
         Console.Write("Options: ");
-        choice = Console.ReadLine().ToLower();
+        choice = Console.ReadLine()!.ToLower();
         Console.Clear();
         
         switch (choice)
@@ -314,6 +315,7 @@ Hopefully you aren't tricking me and giving these to your cats.  Man, cats are t
         Say("Cook", "Oh, really?  Huh.  Must have slipped my mind! I also need 100 birthday candles for the Duke's cake.");
         Console.WriteLine("");
         Say("Adventurer", "I don't know. There are more adventures out there for me. I'm thinking we should just part our ways here.");
+        Enter("Press 'Enter' to continue");
         Console.ReadLine();
         Console.Clear();
         sixth();
@@ -333,7 +335,7 @@ Hopefully you aren't tricking me and giving these to your cats.  Man, cats are t
             Console.WriteLine(candleText);
             Console.WriteLine("Do you help the cook by going to pick up the 100 birthday candles; Yes or No?");
             Console.Write("Your Choice: ");
-            candleChoice = Console.ReadLine().ToLower();
+            candleChoice = Console.ReadLine()!.ToLower();
 
             if (candleChoice == "yes" || candleChoice == "y")
             {
@@ -345,7 +347,7 @@ Hopefully you aren't tricking me and giving these to your cats.  Man, cats are t
             else if(candleChoice == "no" || candleChoice == "n")
             {
                 Console.WriteLine("You are so done with this cook and wish him the best and make a quick exit.");
-            Console.WriteLine("");
+                Console.WriteLine("");
                 Console.WriteLine("For partial completion of quest, you have earned 1 quest point.");
                 Console.ReadLine();
                 Console.Clear();
@@ -357,16 +359,69 @@ Hopefully you aren't tricking me and giving these to your cats.  Man, cats are t
                 Console.ReadLine();
                 sixth();
             }
-        
-
     }
 
     public void seventh()
     {
+        Console.WriteLine("---");
+        Say("Adventurer", "Alright, I'll make one more run for you, but that's IT!");
+        Console.WriteLine("");
+        Say("Cook", "You have my word! You can find all the candles at Edwin's Candle shop. He's Just outside the castle and to the right.");
+        Console.WriteLine("");
+        Say("Adventurer", "Thank's. I'll be on my way.");
+        Console.WriteLine("---");
+        Enter("Press 'Enter' to continue");
+        Console.ReadLine();
+        eighth();
+    }
+
+    public void eighth()
+    {
+        string choose;
+
+        Console.WriteLine("---");
+        Console.WriteLine("*You make a mad dash for the candle shop around the corner*");
+        Console.WriteLine("");
+        Say("Adventurer", "Edwin, I need 100 candles for the Duke's birthday cake, What've you got?");
+        Console.WriteLine("");
+        Say("Edwin", "You want em' in red or blue?");
+        Console.WriteLine("");
+        Say("Adventurer", "It doesn't matter. I just-");
+        Say("Edwin", "YES IT DOES! This is for the Duke! Duke Jackson! Our leader! He knows everything that was, is, or will be!");
+        Console.WriteLine("");
+        Say("Adventurer", "Alright, fine. I'll take 100 blue candles");
+        Say("Edwin", "Actually, I think his favorite color is red.");
+        Console.WriteLine("---");
+        Console.WriteLine("");
+        Console.WriteLine("1. Go with your first choice of blue.");
+        Console.WriteLine("2. Take Edwin's advice and go with red.");
+        Console.Write("Options: ");
+        choose = Console.ReadLine()!.ToLower();
+        Console.Clear();
+
+        switch (choose)
+        {
+            case "1":
+            case "Go with your first choice of blue.":
+                {
+                    Console.WriteLine("---");
+                    Console.WriteLine("");
+                    Say("Adventurer", "Nope. Pretty sure he likes blue. Thank you, bye!");
+                    Console.WriteLine("");
+                    Console.WriteLine("---");
+                    Enter("Press 'Enter' to continue.");
+                    Console.ReadLine();
+                    ninth();
+                    break;
+                }
+            
+            
+        }
 
     }
 
-   
+    public void ninth()
+    {}
 
 
     public void gameOver()
@@ -393,9 +448,7 @@ Hopefully you aren't tricking me and giving these to your cats.  Man, cats are t
         Console.ReadLine();
         Console.Clear();
         gameTitle();
-
     }
-
 
     private void Say(string name, string line)
     {
