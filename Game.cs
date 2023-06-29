@@ -705,6 +705,7 @@ Be careful! Picking the wrong option could leave you stuck or worse!
 
     public void gameEpilouge()
     {
+        Console.WriteLine("EPILOGUE");
         Console.WriteLine("---");
         Console.WriteLine(@"*The party continues late into the night.
     Despite the storm, fireworks can be heard exploding over the castle,
