@@ -24,7 +24,8 @@ In this quest, you will encounter a sad cook who's down on his luck.
 It is up to you to help him bake a cake and save his head!
 
 To advance in the quest, enter the number that corresponds
-with the option you wish to choose, the press 'Enter'.
+with the option you wish to choose, or enter 'Yes' or 'No',
+then press 'Enter'.
 
 Some sections are longer and may require you to scroll up
 a bit in your terminal to read the entire dialogue.
