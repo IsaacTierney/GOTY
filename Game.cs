@@ -742,7 +742,7 @@ Be careful! Picking the wrong option could leave you stuck or worse!
     Lightning flashes again and reveals a small silhouette
     at the end of the pier. 
     
-    A small, but low growl is heard.*");
+    A small, low growl is heard.*");
         Console.WriteLine("");
         Console.WriteLine(@"*Two yellow, glowing eyes open as it's claws extend.*");
         Console.WriteLine("");
