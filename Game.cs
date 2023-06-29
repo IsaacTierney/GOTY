@@ -17,10 +17,19 @@ public class Game
     public void gameTitle()
     {
         // @ is a verbatim identifier
-        Console.WriteLine(@"Welcome to 'The Cook's Assistant' quest!
+        Console.WriteLine(
+        @"Welcome to 'The Cook's Assistant' quest!
 
-        In this quest, you will encounter a sad cook who's down on his luck.
-        It is up to you to help him bake a cake and save his head!
+In this quest, you will encounter a sad cook who's down on his luck.
+It is up to you to help him bake a cake and save his head!
+
+To advance in the quest, enter the number that corresponds
+with the option you wish to choose, the press 'Enter'.
+
+Some sections are longer and may require you to scroll up
+a bit in your terminal to read the entire dialogue.
+
+Be careful! Picking the wrong option could leave you stuck or worse!
 
         Press 'Enter' to begin.");
         Console.ReadLine();
@@ -77,21 +86,21 @@ public class Game
                 {
                     Console.WriteLine("---");
                     Console.WriteLine(@"Cook: Oh, thank you for your kindness! 
-                    I will need all of these ingredients: 
-                    - Flour
-                    - Sugar
-                    - Milk
-                    - Butter
-                    - Sardines
-                    - Eggs.");
+        I will need all of these ingredients: 
+        - Flour
+        - Sugar
+        - Milk
+        - Butter
+        - Sardines
+        - Eggs.");
                     Console.WriteLine("");
                     Console.WriteLine(@"Adventurer: I'm beginning to regret my decision...  
-                    Where do I go to find all of these ingredients for the cake?");
+        Where do I go to find all of these ingredients for the cake?");
                     Console.WriteLine("");
                     Console.WriteLine(@"Cook: You can find the flour and sugar at Marla's Flower Mill.
-                    It's not far from here. Just take the road and head north.
-                    The milk and eggs will be at Shelby and Brianne's farm just east of there.
-                    For the sardines, you'll want to visit Garrett's Fishery to the west.");
+        It's not far from here. Just take the road and head north.
+        The milk and eggs will be at Shelby and Brianne's farm just east of there.
+        For the sardines, you'll want to visit Garrett's Fishery to the west.");
                     Console.WriteLine("");
                     Say("Adventurer", "Is that all... I'd better get on my way.");
                     Console.WriteLine("---");
@@ -204,11 +213,11 @@ public class Game
         Console.WriteLine("*You arrive at the farm.");
         Console.WriteLine("");
         Console.WriteLine(@"Adventurer: Hello. I'm needing to get some milk, butter, and eggs for a birthday cake. 
-        It's for the Duke's birthday party.");
+    It's for the Duke's birthday party.");
         Console.WriteLine("");
         Console.WriteLine(@"Brianne: Sure thing. I'll go get you some eggs.
-        You'll have to go visit Shelby to get the milk and butter.
-        She'll show you what do do.");
+    You'll have to go visit Shelby to get the milk and butter.
+    She'll show you what do do.");
         Console.WriteLine("");
         Say("Adventurer", "Great, thank you very much.");
         Console.WriteLine("");
@@ -217,8 +226,8 @@ public class Game
         Say("Adventurer", "Hi, Shelby. I'm here to get some butter and milk. Brianne said I should see you about those.");
         Console.WriteLine("");
         Console.WriteLine(@"Shelby: Yep. Take this here bucket and go find yerself a dairy cow... 
-        And make sure it's a DAIRY COW! 
-        Hope yer smart enough to tell em apart.");
+    And make sure it's a DAIRY COW! 
+    Hope yer smart enough to tell em apart.");
         Console.WriteLine("");
         Say("Adventurer", "Trust me. I know what I'm doing.");
         Console.WriteLine("");
@@ -274,7 +283,7 @@ public class Game
                     Say("Adventurer", "Hey Shelby, I've got the milk. How's the butter coming along?");
                     Console.WriteLine("");
                     Console.WriteLine(@"Shelby: Great! Here's yer stick o' butter from the fridge,
-                    and yer egg that Brianne fetched for ye.");
+    and yer egg that Brianne fetched for ye.");
                     Console.WriteLine("");
                     Say("Adventurer", "Excellent, thank you! By the way, what's a fridge?");
                     Console.WriteLine("");
@@ -306,16 +315,16 @@ public class Game
         Console.WriteLine("*You step inside the fishery.");
         Console.WriteLine("");
         Console.WriteLine(@"Adventurer: Geez, it smells here. Are you Garrett? 
-        I'm needing to get some sardines for a birthday cake. 
-        Not my preffered topping, but it aint my party either.");
+    I'm needing to get some sardines for a birthday cake. 
+    Not my preffered topping, but it aint my party either.");
         Console.WriteLine("");
         Console.WriteLine(@"Garrett: Yes, that's me. 
-        I'm Garret, and I've got some canned sardines here.
-        You're putting sardines in a birthday cake?");
+    I'm Garret, and I've got some canned sardines here.
+    you're putting sardines in a birthday cake?");
         Console.WriteLine("");
         Console.WriteLine(@"Adventurer: It's for the Duke. 
-        He wants them in his cake for his party.
-        Anyway, how much for a can of sardines?");
+    He wants them in his cake for his party.
+    Anyway, how much for a can of sardines?");
         Console.WriteLine("");
         Console.WriteLine("*A stray cat walks in, following the scent of the sardines");
         Console.WriteLine("*The cat walks towards you and begins rubbing against your feet.");
@@ -331,11 +340,11 @@ public class Game
         Say("Adventurer", "WHAT IS WRONG WITH YOU?");
         Console.WriteLine("");
         Console.WriteLine(@"Garrett: I hate the cats around here. All of them. 
-        They just aren't loyal. Now then, that'll be 3 gold pieces.");
+    They just aren't loyal. Now then, that'll be 3 gold pieces.");
         Console.WriteLine("");
         Console.WriteLine(@"Adventurer: Why I oughtta THROTTLE ya!
-        If I weren't in such a hurry, I'd go get the sardines myself!
-        Here's your gold, you twisted nut.");
+    If I weren't in such a hurry, I'd go get the sardines myself!
+    Here's your gold, you twisted nut.");
         Console.WriteLine("");
         Say("Garrett", "Thank you for your patronage.");
         Console.WriteLine("---");
@@ -356,22 +365,22 @@ public class Game
         Console.WriteLine("*The cook sees you and lets out a big sigh of relief.");
         Console.WriteLine("");
         Console.WriteLine(@"Adventurer: I've returned with all of the ingredients you need for the Duke's birthday cake. 
-        I'll just drop these on the table here and be on my way.");
+    I'll just drop these on the table here and be on my way.");
         Console.WriteLine("");
         Console.WriteLine(@"Cook: You have saved my life! 
-        I can not thank you enough! 
-        Wait, where are the birthday candles?");
+    I can not thank you enough! 
+    Wait, where are the birthday candles?");
         Console.WriteLine("");
         Say("Adventurer", "CANDLES?  You didn't say anything about candles!");
         Console.WriteLine("");
         Console.WriteLine(@"Cook: Oh, dear. They must have slipped my mind! 
-        I'll also be needing 100 birthday candles for the Duke's cake.
-        Could you get those as well? Pretty please?");
+    I'll also be needing 100 birthday candles for the Duke's cake.
+    Could you get those as well? Pretty please?");
         Console.WriteLine("");
         Console.WriteLine(@"Adventurer: I don't know. 
-        There are more adventures out there for me. 
-        Many far more important than baking a cake.
-        I'm thinking we should just part ways here.");
+    There are more adventures out there for me. 
+    Many far more important than baking a cake.
+    I'm thinking we should just part ways here.");
         Console.WriteLine("---");
         Console.WriteLine("");
         Enter("Press 'Enter' to continue");
@@ -385,7 +394,7 @@ public class Game
             Console.WriteLine("---");
             Random rnd = new Random();
             String[] candleOptions = {"The cook does interpretive dancing hoping to woo you into helping.", "The cook offers to let you help him bake the cake if you help him.",
-            "The cook falls to the ground and cries at your feet, pleading with you to help him."};
+    "The cook falls to the ground and cries at your feet, pleading with you to help him."};
             int randomNumber = rnd.Next(0,3);
             String candleText = candleOptions[randomNumber];
 
@@ -524,8 +533,8 @@ public class Game
         Console.WriteLine("*You enter the kitchen and find the cook mixing the ingredients together.*");
         Console.WriteLine("");
         Console.WriteLine(@"Cook: Ah, you're just in time!
-        Would you like to help me bake the cake?
-        It could be fun... A little bit of quality time.");
+    Would you like to help me bake the cake?
+    It could be fun... A little bit of quality time.");
         Console.WriteLine("");
         Say("Adventurer", "Oh, what the heck. It could be fun.");
         Console.WriteLine("");
@@ -536,8 +545,8 @@ public class Game
         Say("Cook", "450 degrees for 15 minutes.");
         Console.WriteLine("");
         Console.WriteLine(@"Adventurer: Uhh, are you sure about that? 
-        That seems far too hot for a cake.
-        Why not try 350 for 30 minutes?");
+    That seems far too hot for a cake.
+    Why not try 350 for 30 minutes?");
         Console.WriteLine("---");
         Console.WriteLine("");
         Console.WriteLine("1. Bake it at 450 for 15 minutes.");
@@ -553,9 +562,9 @@ public class Game
                 {
                     Console.WriteLine("---");
                     Console.WriteLine(@"Cook: Whoooo's the apprentice here? 
-                    Besides, we don't have time for that! 
-                    The guests are here and the Duke will want his cake soon!
-                    Trust me on this one.");
+    Besides, we don't have time for that! 
+    The guests are here and the Duke will want his cake soon!
+    Trust me on this one.");
                     Console.WriteLine("");
                     Say("Adventurer", "Well, alright. Here goes nothing.");
                     Console.WriteLine("");
@@ -572,7 +581,7 @@ public class Game
                     Console.WriteLine("*The Duke sees his ruined cake and squeals.*");
                     Console.WriteLine("");
                     Console.WriteLine(@"Duke: MY CAKE! MY BEAUTIFUL BIRTHDAT CAKE!
-                    IT'S RUINEEDDD! You two WILL PAY! GUARDS! Execute them AT ONCE!");
+    IT'S RUINEEDDD! You two WILL PAY! GUARDS! Execute them AT ONCE!");
                     Console.WriteLine("");
                     Console.WriteLine("*You are both quickly escorted out the back of the castle.*");
                     Console.WriteLine("*Two gunshots ring out as crows fly from a nearby tree.*");
@@ -597,13 +606,13 @@ public class Game
                 {
                     Console.WriteLine("---");
                     Console.WriteLine(@"Cook: Whoooo's the apprentice here? 
-                    Besides, we don't have time for that! 
-                    The guests are here and the Duke will want his cake soon!
-                    Trust me on this one.");
+    Besides, we don't have time for that! 
+    The guests are here and the Duke will want his cake soon!
+    Trust me on this one.");
                     Console.WriteLine("");
                     Console.WriteLine(@"Adventurer: You've not given me many reasons to trust you.
-                    Step aside, nerd. I didn't come this far to mess up.
-                    We're doing this my way.");
+    Step aside, nerd. I didn't come this far to mess up.
+    We're doing this my way.");
                     Console.WriteLine("");
                     Console.WriteLine("*You both place the cake into the oven and watch anxiously.*");
                     Console.WriteLine("*30 minutes pass and you remove the cake from the oven.*");
@@ -611,9 +620,9 @@ public class Game
                     Console.WriteLine("*The most beautiful birthday cake garnished with fins of sardines glistens before you.*");
                     Console.WriteLine("");
                     Console.WriteLine(@"Cook: It's... PERFECT!
-                    This is quite possibly the best cake I have ever seen!
-                    Thank you, Adventurer! Quickly, let's put candles on.
-                    The Duke will be here any second. You got green candles, right?");
+    This is quite possibly the best cake I have ever seen!
+    Thank you, Adventurer! Quickly, let's put candles on.
+    The Duke will be here any second. You got green candles, right?");
                     Console.WriteLine("");
                     Console.WriteLine("*Duke Jackson bursts in as you hold wrestle the cook into oven.*");
                     Console.WriteLine("");
@@ -622,9 +631,13 @@ public class Game
                     Console.WriteLine("*You and the Cook freeze and turn to the Duke.");
                     Console.WriteLine("");
                     Console.WriteLine(@"Duke: My cake! It's beautiful!
-                    This is quite posibly the most beautiful dessert
-                    I have ever seen in my entire life!
-                    Guards, bow to them!");
+    This is quite posibly the most beautiful dessert
+    I have ever seen in my entire life! The candles are
+    placed without flaw! I wish I weren't color blind!");
+                    Console.WriteLine("");
+                    Console.WriteLine("*You and the Cook glance at each other, then back to the Duke.*");
+                    Console.WriteLine("");
+                    Say("Duke", "Guards! On your knees and bow to them!");
                     Console.WriteLine("");
                     Console.WriteLine("*You are embraced by the Duke and the party begins!*");
                     Console.WriteLine("---");
@@ -693,17 +706,17 @@ public class Game
     {
         Console.WriteLine("---");
         Console.WriteLine(@"*The party continues late into the night.
-        Despite the storm, fireworks can be heard exploding over the castle,
-        all the way to Garrett's Fishery. He sat back in his chair, 
-        feet propped up on his desk, carving a piece of wood into a mallard
-        for his water fowl collection. Lightning flashes over the water as he
-        peers out the window. He grumbles to himself.*");
+    Despite the storm, fireworks can be heard exploding over the castle,
+    all the way to Garrett's Fishery. He sat back in his chair, 
+    feet propped up on his desk, carving a piece of wood into a mallard
+    for his water fowl collection. Lightning flashes over the water as he
+    peers out the window. He grumbles to himself.*");
         Console.WriteLine("");
         Say("Garrett", "Quite the storm tonight... Hmm.");
         Console.WriteLine("");
         Console.WriteLine(@"*He stands up and douses the candle as he leaves the room.
-        Lightning flashes again and reveals a small silhouette
-        at the end of the pier. A small, but low growl is heard.*");
+    Lightning flashes again and reveals a small silhouette
+    at the end of the pier. A small, but low growl is heard.*");
         Console.WriteLine("");
         Console.WriteLine(@"*Two yellow, glowing eyes open as it's claws extend.*");
         Console.WriteLine("");
