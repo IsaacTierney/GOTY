@@ -20,7 +20,7 @@ public class Game
         Console.WriteLine(
         @"Welcome to 'The Cook's Assistant' quest!
 
-In this quest, you will encounter a sad cook who's down on his luck.
+In this quest, you will encounter a sad cook who is down on his luck.
 It is up to you to help him bake a cake and save his head!
 
 To advance in the quest, enter the number that corresponds
