@@ -12,11 +12,25 @@ public class Game
 
     public void run()
     {
+        startBanner();
+    }
+    public void startBanner()
+    {
+        Console.WriteLine(@"   
+   ___            _    _        _            _      _               _   
+  / __| ___  ___ | |__( )___   /_\   ___ ___(_) ___| |_  __ _  _ _ | |_ 
+ | (__ / _ \/ _ \| / /|/(_-<  / _ \ (_-<(_-<| |(_-<|  _|/ _` || ' \|  _|
+  \___|\___/\___/|_\_\  /__/ /_/ \_\/__//__/|_|/__/ \__|\__,_||_||_|\__|
+                                                                        ");
+        Console.WriteLine("");
+        Enter("Press 'Enter' to continue");
+        Console.ReadLine();
         gameTitle();
+
     }
     public void gameTitle()
     {
-        // @ is a verbatim identifier
+       // @ is a verbatim identifier
         Console.WriteLine(
         @"Welcome to 'The Cook's Assistant' quest!
 
@@ -671,7 +685,7 @@ Be careful! Picking the wrong option could leave you stuck or worse!
         Enter("Press 'Enter' to continue");
         Console.ReadLine();
         Console.Clear();
-        gameTitle();   
+        startBanner();   
     }
 
     public void gameDead()
