@@ -722,17 +722,27 @@ Be careful! Picking the wrong option could leave you stuck or worse!
         Console.WriteLine("EPILOGUE");
         Console.WriteLine("---");
         Console.WriteLine(@"*The party continues late into the night.
+
     Despite the storm, fireworks can be heard exploding over the castle,
-    all the way to Garrett's Fishery. He sat back in his chair, 
+    all the way to Garrett's Fishery. 
+    
+    He sat back in his chair, 
     feet propped up on his desk, carving a piece of wood into a mallard
-    for his water fowl collection. Lightning flashes over the water as he
-    peers out the window. He grumbles to himself.*");
+    for his water fowl collection. 
+    
+    Lightning flashes over the water as he
+    peers out the window. 
+    
+    He grumbles to himself.*");
         Console.WriteLine("");
         Say("Garrett", "Quite the storm tonight... Hmm.");
         Console.WriteLine("");
         Console.WriteLine(@"*He stands up and douses the candle as he leaves the room.
+    
     Lightning flashes again and reveals a small silhouette
-    at the end of the pier. A small, but low growl is heard.*");
+    at the end of the pier. 
+    
+    A small, but low growl is heard.*");
         Console.WriteLine("");
         Console.WriteLine(@"*Two yellow, glowing eyes open as it's claws extend.*");
         Console.WriteLine("");
