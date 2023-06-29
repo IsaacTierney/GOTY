@@ -112,7 +112,7 @@ Be careful! Picking the wrong option could leave you stuck or worse!
                     Console.WriteLine(@"Adventurer: I'm beginning to regret my decision...  
         Where do I go to find all of these ingredients for the cake?");
                     Console.WriteLine("");
-                    Console.WriteLine(@"Cook: You can find the flour and sugar at Marla's Flower Mill.
+                    Console.WriteLine(@"Cook: You can find the flour and sugar at Marla's Flour Mill.
         It's not far from here. Just take the road and head north.
         The milk and eggs will be at Shelby and Brianne's farm just east of there.
         For the sardines, you'll want to visit Garrett's Fishery to the west.");
