@@ -4,7 +4,6 @@ namespace GOTY;
 
 public class Game
 {
-    private string? _color;
     static void Main(string[] args)
     {
         new Game().run();
@@ -12,15 +11,29 @@ public class Game
 
     public void run()
     {
+        startBanner();
+    }
+    public void startBanner()
+    {
+        Console.WriteLine(@"   
+   ___            _    _        _            _      _               _   
+  / __| ___  ___ | |__( )___   /_\   ___ ___(_) ___| |_  __ _  _ _ | |_ 
+ | (__ / _ \/ _ \| / /|/(_-<  / _ \ (_-<(_-<| |(_-<|  _|/ _` || ' \|  _|
+  \___|\___/\___/|_\_\  /__/ /_/ \_\/__//__/|_|/__/ \__|\__,_||_||_|\__|
+                                                                        ");
+        Console.WriteLine("");
+        Enter("Press 'Enter' to continue");
+        Console.ReadLine();
         gameTitle();
+
     }
     public void gameTitle()
     {
-        // @ is a verbatim identifier
+       // @ is a verbatim identifier
         Console.WriteLine(
         @"Welcome to 'The Cook's Assistant' quest!
 
-In this quest, you will encounter a sad cook who's down on his luck.
+In this quest, you will encounter a sad cook who is down on his luck.
 It is up to you to help him bake a cake and save his head!
 
 To advance in the quest, enter the number that corresponds
@@ -98,7 +111,7 @@ Be careful! Picking the wrong option could leave you stuck or worse!
                     Console.WriteLine(@"Adventurer: I'm beginning to regret my decision...  
         Where do I go to find all of these ingredients for the cake?");
                     Console.WriteLine("");
-                    Console.WriteLine(@"Cook: You can find the flour and sugar at Marla's Flower Mill.
+                    Console.WriteLine(@"Cook: You can find the flour and sugar at Marla's Flour Mill.
         It's not far from here. Just take the road and head north.
         The milk and eggs will be at Shelby and Brianne's farm just east of there.
         For the sardines, you'll want to visit Garrett's Fishery to the west.");
@@ -671,7 +684,7 @@ Be careful! Picking the wrong option could leave you stuck or worse!
         Enter("Press 'Enter' to continue");
         Console.ReadLine();
         Console.Clear();
-        gameTitle();   
+        startBanner();   
     }
 
     public void gameDead()
@@ -705,19 +718,30 @@ Be careful! Picking the wrong option could leave you stuck or worse!
 
     public void gameEpilouge()
     {
+        Console.WriteLine("EPILOGUE");
         Console.WriteLine("---");
         Console.WriteLine(@"*The party continues late into the night.
+
     Despite the storm, fireworks can be heard exploding over the castle,
-    all the way to Garrett's Fishery. He sat back in his chair, 
+    all the way to Garrett's Fishery. 
+    
+    He sat back in his chair, 
     feet propped up on his desk, carving a piece of wood into a mallard
-    for his water fowl collection. Lightning flashes over the water as he
-    peers out the window. He grumbles to himself.*");
+    for his water fowl collection. 
+    
+    Lightning flashes over the water as he
+    peers out the window. 
+    
+    He grumbles to himself.*");
         Console.WriteLine("");
         Say("Garrett", "Quite the storm tonight... Hmm.");
         Console.WriteLine("");
         Console.WriteLine(@"*He stands up and douses the candle as he leaves the room.
+    
     Lightning flashes again and reveals a small silhouette
-    at the end of the pier. A small, but low growl is heard.*");
+    at the end of the pier. 
+    
+    A small, low growl is heard.*");
         Console.WriteLine("");
         Console.WriteLine(@"*Two yellow, glowing eyes open as it's claws extend.*");
         Console.WriteLine("");
@@ -727,7 +751,7 @@ Be careful! Picking the wrong option could leave you stuck or worse!
         Enter("Press 'Enter' to continue");
         Console.ReadLine();
         Console.Clear();
-        gameTitle();
+        startBanner();
     }
 
     private void Say(string name, string line)
