@@ -4,7 +4,6 @@ namespace GOTY;
 
 public class Game
 {
-    private string? _color;
     static void Main(string[] args)
     {
         new Game().run();
@@ -752,7 +751,7 @@ Be careful! Picking the wrong option could leave you stuck or worse!
         Enter("Press 'Enter' to continue");
         Console.ReadLine();
         Console.Clear();
-        gameTitle();
+        startBanner();
     }
 
     private void Say(string name, string line)
